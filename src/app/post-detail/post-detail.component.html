@@ -1,0 +1,41 @@
+<app-header></app-header>
+<div class="wrapper">
+    <div class="block-one">
+        <div>
+            <img class="image-video" [src]="respuesta?.sprites?.other?.['official-artwork']?.front_default" alt="">
+        </div>
+        <div class="wrapper-info">
+            <div class="number">Nº {{ respuesta?.id }}</div>
+            <div class="title">{{ respuesta?.name }}</div>
+            <div class="sub-title">{{ respuesta?.types[0]?.type?.name }}</div>            
+        </div>
+    </div>
+    <div class="block-two">
+        <div class="sub-block-two">
+            <ul class="coment-list">
+                <li *ngFor="let detalleComentario of comentarios">
+                    <div class="author">
+
+                        <img class="avatar" src="" alt="">
+
+                    </div>
+                    <div class="content">
+                        <b><div>Leifer</div></b> {{detalleComentario?.text}}
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <form [formGroup]="form" (submit)="enviarData()">
+                    <div class="form-group">
+                        <div for="commentArea" class="title-comment">Comentar</div>
+                        <textarea formControlName="textAreaComentario" class="text-comment" id="commentArea" rows="8"></textarea>
+                        <div>
+                            <button class="button">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,23 @@
+.mini-image {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+.divider {
+    margin: 1em 0;
+    border-bottom: 2px solid #ff0000;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+li {
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    
+}

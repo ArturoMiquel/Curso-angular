@@ -1,0 +1,15 @@
+<app-header></app-header>
+
+<!--********************** LAS CARDS *****************-->
+
+<div class="grid">
+  <app-card *ngFor="let detalleVideo of listaDeVideos" [dataEntrante]="detalleVideo" [routerLink]="['/post', detalleVideo?.id]"></app-card>
+</div>
+
+<div class="favorites-container">
+  <div class="favorite-item" *ngFor="let favorito of favoritos">
+    <app-card [dataEntrante]="favorito"></app-card>
+  </div>
+</div>
+
+<app-sidebar></app-sidebar>

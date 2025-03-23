@@ -1,0 +1,25 @@
+.card {
+    width: 180px;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+.sub-title {
+    font-size: 1em;
+    margin: 0.5em 0;
+}
+.favorite {
+    color: red;
+    font-size: 1em;
+    margin: 0.5em 0;
+}
