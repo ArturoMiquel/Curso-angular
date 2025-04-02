@@ -1,0 +1,203 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "T-Shirt",
+      "description": "100% cotton t-shirt",
+      "price": 19.99,
+      "category": "Clothing",
+      "stock": 50
+    },
+    {
+      "id": "2",
+      "name": "Sport Shoes",
+      "description": "Comfortable shoes for exercising",
+      "price": 49.99,
+      "category": "Footwear",
+      "stock": 30
+    },
+    {
+      "id": "3",
+      "name": "Smartphone",
+      "description": "Smartphone with 6.5-inch display",
+      "price": 299.99,
+      "category": "Electronics",
+      "stock": 20
+    },
+    {
+      "id": "4",
+      "name": "Bluetooth Headphones",
+      "description": "Wireless headphones with noise cancellation",
+      "price": 79.99,
+      "category": "Electronics",
+      "stock": 40
+    },
+    {
+      "id": "5",
+      "name": "Travel Backpack",
+      "description": "Durable and comfortable backpack for long trips",
+      "price": 34.99,
+      "category": "Accessories",
+      "stock": 25
+    },
+    {
+      "id": "6",
+      "name": "Sports Watch",
+      "description": "Water-resistant watch with activity tracking",
+      "price": 129.99,
+      "category": "Accessories",
+      "stock": 15
+    },
+    {
+      "id": "7",
+      "name": "HP Laptop",
+      "description": "15.6-inch laptop with an i5 processor",
+      "price": 599.99,
+      "category": "Electronics",
+      "stock": 10
+    },
+    {
+      "id": "8",
+      "name": "Digital Camera",
+      "description": "Camera with 20MP resolution and 4K video recording",
+      "price": 349.99,
+      "category": "Electronics",
+      "stock": 12
+    },
+    {
+      "id": "9",
+      "name": "Ergonomic Chair",
+      "description": "Ergonomic office chair with lumbar support",
+      "price": 89.99,
+      "category": "Furniture",
+      "stock": 60
+    },
+    {
+      "id": "10",
+      "name": "Mechanical Keyboard",
+      "description": "Backlit mechanical keyboard for gaming",
+      "price": 69.99,
+      "category": "Accessories",
+      "stock": 18
+    },
+    {
+      "id": "11",
+      "name": "Automatic Coffee Maker",
+      "description": "Coffee maker with built-in grinder and digital control",
+      "price": 129.99,
+      "category": "Appliances",
+      "stock": 22
+    },
+    {
+      "id": "12",
+      "name": "Stainless Steel Thermos",
+      "description": "Thermos for hot and cold beverages, made of stainless steel",
+      "price": 24.99,
+      "category": "Accessories",
+      "stock": 45
+    },
+    {
+      "id": "13",
+      "name": "Bluetooth Speaker",
+      "description": "Portable speaker with stereo sound and water resistance",
+      "price": 59.99,
+      "category": "Electronics",
+      "stock": 30
+    },
+    {
+      "id": "14",
+      "name": "Foldable Mobile Phone",
+      "description": "Smartphone with a 7.2-inch foldable display",
+      "price": 999.99,
+      "category": "Electronics",
+      "stock": 5
+    },
+    {
+      "id": "15",
+      "name": "LED Desk Lamp",
+      "description": "Adjustable desk lamp with dimmable LED light",
+      "price": 39.99,
+      "category": "Home",
+      "stock": 100
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "pokemonId": 1,
+      "text": "Este es un comentario para el Pokémon 1"
+    },
+    {
+      "id": "2",
+      "pokemonId": 2,
+      "text": "Comentario para el Pokémon 2"
+    },
+    {
+      "id": "3",
+      "pokemonId": 1,
+      "text": "Otro comentario para el Pokémon 1"
+    },
+    {
+      "id": "1",
+      "pokemonId": 136,
+      "text": "Flareon rules!"
+    },
+    {
+      "id": "1",
+      "pokemonId": 6,
+      "text": "Lol"
+    },
+    {
+      "id": "1",
+      "pokemonId": 8,
+      "text": "Wartortle rules!!!\n"
+    },
+    {
+      "id": 1,
+      "pokemonId": 9,
+      "text": "aefgaeg"
+    },
+    {
+      "id": 1,
+      "pokemonId": 104,
+      "text": "qwdqwf"
+    },
+    {
+      "id": 2,
+      "pokemonId": 104,
+      "text": "qwdfqwd"
+    },
+    {
+      "id": 1,
+      "pokemonId": 7,
+      "text": "Holiwis\n"
+    },
+    {
+      "id": 2,
+      "pokemonId": 7,
+      "text": "uwu"
+    }
+  ],
+  "favorites": [
+    {
+      "id": "7",
+      "name": "squirtle",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png"
+    },
+    {
+      "id": "150",
+      "name": "mewtwo",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png"
+    },
+    {
+      "id": "151",
+      "name": "mew",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png"
+    },
+    {
+      "id": "145",
+      "name": "zapdos",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png"
+    }
+  ]
+}

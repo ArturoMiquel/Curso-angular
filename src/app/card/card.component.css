@@ -1,8 +1,13 @@
 .card {
     width: 180px;
-    height: auto;
+    height: 270px;
     display: block;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .card img {
     width: 100%;
@@ -12,14 +17,14 @@
 .title {
     font-size: 1.5em;
     font-weight: bold;
-    margin: 0.5em 0;
+    margin: 0 0;
 }
 .sub-title {
     font-size: 1em;
-    margin: 0.5em 0;
+    margin: 0 0;
 }
 .favorite {
     color: red;
     font-size: 1em;
-    margin: 0.5em 0;
+    margin: 0 0;
 }

@@ -8,7 +8,7 @@ export class RestService {
   constructor(private http: HttpClient) { }
 
   public get(url: string) {
-    return this.http.get(url);
+    return this.http.get(url); //GET al api de post
   }
 
   public post (url: string, body: any) {

@@ -15,12 +15,10 @@
             <ul class="coment-list">
                 <li *ngFor="let detalleComentario of comentarios">
                     <div class="author">
-
                         <img class="avatar" src="" alt="">
-
                     </div>
                     <div class="content">
-                        <b><div>Leifer</div></b> {{detalleComentario?.text}}
+                        {{detalleComentario?.text}}
                     </div>
                 </li>
             </ul>

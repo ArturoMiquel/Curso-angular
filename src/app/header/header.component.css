@@ -12,10 +12,11 @@
     align-content: center;
     justify-content: space-between;
     background: linear-gradient(to right, #fcbd47de, #fc883ade);
+    justify-content: center;
 }
 
 .logo {
-    height: 2rem;
+    height: 3rem;
 }
 
 .menu li {

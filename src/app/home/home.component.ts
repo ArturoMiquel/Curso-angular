@@ -30,7 +30,7 @@ export class HomeComponent implements OnInit {
     for(let i = 1; i <= 12; i++){
       let randomId;
       do {
-        randomId = Math.floor(Math.random() * 151) + 1;
+        randomId = Math.floor(Math.random() * 151 ) + 1;
       } while (usedIds.has(randomId));
       usedIds.add(randomId);
 
