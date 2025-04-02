@@ -5,10 +5,12 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from "../header/header.component";
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ServicioDeFavoritosService } from '../servicio-de-favoritos.service';
+import { SidebarComponent } from "../sidebar/sidebar.component";
 
 @Component({
   selector: 'app-post-detail',
-  imports: [CommonModule, HeaderComponent, FormsModule, ReactiveFormsModule],
+  imports: [CommonModule, HeaderComponent, FormsModule, ReactiveFormsModule, SidebarComponent],
   templateUrl: './post-detail.component.html',
   styleUrls: ['./post-detail.component.css']
 })
@@ -19,7 +21,12 @@ export class PostDetailComponent implements OnInit {
   comentarioText: string = '';
   public form: FormGroup = new FormGroup({});
 
-  constructor(private route: ActivatedRoute, private RestService: RestService,private formBuilder: FormBuilder) {}
+  constructor(
+    private route: ActivatedRoute,
+    private RestService: RestService,
+    private formBuilder: FormBuilder,
+    private servicioFavorito: ServicioDeFavoritosService // Inyectar el servicio de favoritos
+  ) {}
 
   ngOnInit(): void {
     this.route.params.subscribe(params => {
@@ -66,5 +73,30 @@ export class PostDetailComponent implements OnInit {
       }, error => {
         console.error('Error al enviar el comentario:', error);
       });
+  }
+
+  agregarAFavoritos() {
+    const favorito = {
+      id: this.respuesta.id.toString(),
+      name: this.respuesta.name,
+      sprite: this.respuesta.sprites.other['official-artwork'].front_default
+    };
+
+    this.servicioFavorito.obtenerFavoritos().subscribe((favoritos: any[]) => {
+      favoritos = favoritos || [];
+      const existe = favoritos.some((f: any) => f.id === favorito.id);
+      if (existe) {
+        console.log('El Pokémon ya está en favoritos, no se añadirá.');
+      } else {
+        this.servicioFavorito.agregarFavorito(favorito).then(() => {
+          console.log('Favorito guardado en db.json');
+          this.servicioFavorito.disparadorDeFavoritos.emit(favorito);
+        }).catch(error => {
+          console.error('Error al guardar el favorito:', error);
+        });
+      }
+    }, error => {
+      console.error('Error al obtener favoritos:', error);
+    });
   }
 }

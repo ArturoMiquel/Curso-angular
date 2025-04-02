@@ -153,36 +153,116 @@
       "text": "Wartortle rules!!!\n"
     },
     {
-      "id": 1,
+      "id": "1",
       "pokemonId": 9,
       "text": "aefgaeg"
     },
     {
-      "id": 1,
+      "id": "1",
       "pokemonId": 104,
       "text": "qwdqwf"
     },
     {
-      "id": 2,
+      "id": "2",
       "pokemonId": 104,
       "text": "qwdfqwd"
     },
     {
-      "id": 1,
+      "id": "1",
       "pokemonId": 7,
       "text": "Holiwis\n"
     },
     {
-      "id": 2,
+      "id": "2",
       "pokemonId": 7,
       "text": "uwu"
+    },
+    {
+      "id": 1,
+      "pokemonId": 75,
+      "text": "hola"
     }
   ],
   "favorites": [
     {
+      "id": "1",
+      "name": "bulbasaur",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+    },
+    {
+      "id": "3",
+      "name": "venusaur",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png"
+    },
+    {
+      "id": "4",
+      "name": "charmander",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
+    },
+    {
+      "id": "6",
+      "name": "charizard",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png"
+    },
+    {
       "id": "7",
       "name": "squirtle",
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png"
+    },
+    {
+      "id": "9",
+      "name": "blastoise",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png"
+    },
+    {
+      "id": "25",
+      "name": "pikachu",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+    },
+    {
+      "id": "31",
+      "name": "nidoqueen",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/31.png"
+    },
+    {
+      "id": "34",
+      "name": "nidoking",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/34.png"
+    },
+    {
+      "id": "94",
+      "name": "gengar",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png"
+    },
+    {
+      "id": "130",
+      "name": "gyarados",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png"
+    },
+    {
+      "id": "131",
+      "name": "lapras",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/131.png"
+    },
+    {
+      "id": "144",
+      "name": "articuno",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/144.png"
+    },
+    {
+      "id": "145",
+      "name": "zapdos",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png"
+    },
+    {
+      "id": "146",
+      "name": "moltres",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/146.png"
+    },
+    {
+      "id": "149",
+      "name": "dragonite",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png"
     },
     {
       "id": "150",
@@ -193,11 +273,6 @@
       "id": "151",
       "name": "mew",
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png"
-    },
-    {
-      "id": "145",
-      "name": "zapdos",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png"
     }
   ]
 }

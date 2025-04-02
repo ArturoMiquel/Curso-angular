@@ -1,7 +1,16 @@
-<div class="header">
+<header>
+  <div class="header">
     <ul class="menu">
-        <li>
-            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" alt="">
-        </li>
+      <li>
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" alt="" (click)="irAInicio()">
+      </li>
     </ul>
-</div>
+    <div class="link">
+      <a href="http://localhost:4200/list-videos">Lista Pokémons</a>
+    </div>
+  </div>
+  <form (submit)="buscar()" class="buscador">
+    <input type="text" [(ngModel)]="searchValue" placeholder="Buscar por número" name="search" />
+    <button type="submit">Buscar</button>
+  </form>
+</header>

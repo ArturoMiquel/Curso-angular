@@ -6,17 +6,17 @@
         </div>
         <div class="wrapper-info">
             <div class="number">Nº {{ respuesta?.id }}</div>
-            <div class="title">{{ respuesta?.name }}</div>
-            <div class="sub-title">{{ respuesta?.types[0]?.type?.name }}</div>            
+            <div class="title">{{ respuesta?.name  | titlecase }}</div>
+            <div class="sub-title">{{ respuesta?.types[0]?.type?.name  | titlecase}}</div>            
         </div>
     </div>
     <div class="block-two">
         <div class="sub-block-two">
             <ul class="coment-list">
                 <li *ngFor="let detalleComentario of comentarios">
-                    <div class="author">
+                    <!--<div class="author">
                         <img class="avatar" src="" alt="">
-                    </div>
+                    </div>-->
                     <div class="content">
                         {{detalleComentario?.text}}
                     </div>
@@ -34,6 +34,11 @@
                 </form>
             </div>
         </div>
-
+        <div class="post-detail">
+            <button (click)="agregarAFavoritos()">Agregar a Favoritos</button>
+        </div>
     </div>
 </div>
+
+
+<app-sidebar></app-sidebar>

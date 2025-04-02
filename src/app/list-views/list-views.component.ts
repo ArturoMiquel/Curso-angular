@@ -1,48 +1,33 @@
 import { RestService } from './../rest.service';
-import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { HeaderComponent } from "../header/header.component";
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort';
+import { MatSort, MatSortModule } from '@angular/material/sort';
+import { MatTableDataSource } from '@angular/material/table';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-list-views',
-  imports: [HeaderComponent, MatTableModule, MatPaginatorModule, MatSortModule],
+  imports: [HeaderComponent, MatTableModule, MatPaginatorModule, MatSortModule, CommonModule],
   standalone: true,
   templateUrl: './list-views.component.html',
   styleUrl: './list-views.component.css'
 })
 export class ListViewsComponent implements OnInit {
-  @ViewChild('editTmpl', { static: true }) editTmpl!: TemplateRef<any>;
-  @ViewChild('hdrTpl', { static: true }) hdrTpl!: TemplateRef<any>;
+  @ViewChild(MatSort) sort!: MatSort;
 
-  data: { image: string; views: number; name: string }[] = [];
-  columns = ['image', 'views', 'name'];
-  cols: { cellTemplate: TemplateRef<any>; headerTemplate: TemplateRef<any>; name: string; }[] | undefined;
+  dataSource = new MatTableDataSource<{ image: string; views: number; name: string }>();
+  displayedColumns = ['image', 'views', 'name'];
 
-  constructor(private RestService:RestService) {
-
-   }
+  constructor(private RestService: RestService) {}
 
   ngOnInit(): void {
-    /*this.cols = [
-      {
-        cellTemplate: this.editTmpl,
-        headerTemplate: this.hdrTpl,
-        name: 'image',
-      },
-      {
-        cellTemplate: this.editTmpl,
-        headerTemplate: this.hdrTpl,
-        name: 'views',
-      },
-      {
-        cellTemplate: this.editTmpl,
-        headerTemplate: this.hdrTpl,
-        name: 'name',
-      }  
-    ];*/
-    this.cargarData()
+    this.cargarData();
+  }
+
+  ngAfterViewInit(): void {
+    this.dataSource.sort = this.sort; // Asigna el MatSort al dataSource
   }
 
   cargarData(): void {
@@ -53,16 +38,16 @@ export class ListViewsComponent implements OnInit {
       );
 
       Promise.all(requests).then((responses: any[]) => {
-        this.data = responses.map((pokemon: any) => {
+        const data = responses.map((pokemon: any) => {
           return {
             image: pokemon.sprites.other['official-artwork'].front_default,
             views: pokemon.id,
             name: pokemon.name
           };
         });
-        console.log('Data procesada', this.data);
+        this.dataSource.data = data; // Asigna los datos al dataSource
+        console.log('Data procesada', this.dataSource.data);
       });
     });
   }
-
 }
