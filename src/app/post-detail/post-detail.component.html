@@ -7,7 +7,7 @@
         <div class="wrapper-info">
             <div class="number">Nº {{ respuesta?.id }}</div>
             <div class="title">{{ respuesta?.name  | titlecase }}</div>
-            <div class="sub-title">{{ respuesta?.types[0]?.type?.name  | titlecase}}</div>            
+            <div class="sub-title">{{ respuesta?.types[0]?.type?.name | traducirTipo | titlecase }}</div>            
         </div>
     </div>
     <div class="block-two">

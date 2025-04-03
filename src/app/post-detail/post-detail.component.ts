@@ -7,10 +7,11 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ServicioDeFavoritosService } from '../servicio-de-favoritos.service';
 import { SidebarComponent } from "../sidebar/sidebar.component";
+import { TraducirTipoPipe } from "../traducir-tipo.pipe";
 
 @Component({
   selector: 'app-post-detail',
-  imports: [CommonModule, HeaderComponent, FormsModule, ReactiveFormsModule, SidebarComponent],
+  imports: [CommonModule, HeaderComponent, FormsModule, ReactiveFormsModule, SidebarComponent, TraducirTipoPipe],
   templateUrl: './post-detail.component.html',
   styleUrls: ['./post-detail.component.css']
 })

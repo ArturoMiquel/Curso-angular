@@ -1,0 +1,37 @@
+
+<img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/2560px-International_Pok%C3%A9mon_logo.svg.png" alt="">
+<div class="container">
+    <form [formGroup]="formLogin" (submit)="enviarDatos()">
+  
+      <!-- ******************** INPUT EMAIL ******************** -->
+      <div>
+        <label for="Email">Email  </label>
+        <input type="text" id="email" formControlName="email">
+      </div>
+      <hr>
+      <!-- ******************** INPUT PASSWORD ******************** -->
+      <div>
+        <label for="Password">Password  </label>
+        <input type="password" id="password" formControlName="password">
+      </div>
+      <hr>
+      <!-- ******************** INPUT terms ******************** -->
+       <!--
+      <div>
+        <label for="terms">Terms and conditions</label>
+        <input type="checkbox" id="terms" formControlName="terms">
+      </div>
+      <hr>
+      -->
+      <!-- ********************* BUTTON ************************** -->
+      <div>
+        <button [disabled]="formLogin.invalid">Send</button>
+      </div>
+    </form>    
+  </div>
+  <div class="mensaje"></div>
+  <div>
+    <hr>  
+  <div>
+    Valido: {{ formLogin.valid | json}} <br>
+  </div>

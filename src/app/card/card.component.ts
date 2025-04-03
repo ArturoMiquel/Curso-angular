@@ -2,10 +2,11 @@ import { Component, OnInit, Input } from '@angular/core';
 import { ServicioDeFavoritosService } from '../servicio-de-favoritos.service';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { TraducirTipoPipe } from "../traducir-tipo.pipe";
 
 @Component({
   selector: 'app-card',
-  imports: [RouterModule, CommonModule], // Importa CommonModule para habilitar pipes como titlecase
+  imports: [RouterModule, CommonModule, TraducirTipoPipe], // Importa CommonModule para habilitar pipes como titlecase
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.css']
 })

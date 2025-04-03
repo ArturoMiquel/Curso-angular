@@ -31,7 +31,7 @@ export class ListViewsComponent implements OnInit {
   }
 
   cargarData(): void {
-    this.RestService.get(`https://pokeapi.co/api/v2/pokemon?limit=800`).subscribe((respuesta: any) => {
+    this.RestService.get(`https://pokeapi.co/api/v2/pokemon?limit=1302`).subscribe((respuesta: any) => {
       console.log('Respuesta de la API', respuesta);
       const requests = respuesta.results.map((item: any) =>
         this.RestService.get(item.url).toPromise()

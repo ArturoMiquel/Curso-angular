@@ -2,7 +2,7 @@
   <img class="image" [src]="dataEntrante?.sprites?.other?.['official-artwork']?.front_default" alt="">
   <div class="wrapper-text">
     <div class="title">{{ dataEntrante?.name | titlecase }}</div>
-    <div class="sub-title">{{ dataEntrante?.types[0]?.type?.name | titlecase }}</div>
+    <div class="sub-title">{{ dataEntrante?.types[0]?.type?.name | traducirTipo| titlecase }}</div>
   </div>
   <div>
     <button class="favorite" (click)="agregarFavorito($event)">Add favorite</button>

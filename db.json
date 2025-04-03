@@ -178,9 +178,29 @@
       "text": "uwu"
     },
     {
-      "id": 1,
+      "id": "1",
       "pokemonId": 75,
       "text": "hola"
+    },
+    {
+      "id": 1,
+      "pokemonId": 31,
+      "text": "Nidoqueen!!"
+    },
+    {
+      "id": 2,
+      "pokemonId": 31,
+      "text": "hoola\n"
+    },
+    {
+      "id": 3,
+      "pokemonId": 31,
+      "text": "pokemon"
+    },
+    {
+      "id": 1,
+      "pokemonId": 24,
+      "text": "alsihad"
     }
   ],
   "favorites": [
@@ -200,11 +220,6 @@
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
     },
     {
-      "id": "6",
-      "name": "charizard",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png"
-    },
-    {
       "id": "7",
       "name": "squirtle",
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png"
@@ -213,6 +228,11 @@
       "id": "9",
       "name": "blastoise",
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png"
+    },
+    {
+      "id": "19",
+      "name": "rattata",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/19.png"
     },
     {
       "id": "25",
@@ -228,6 +248,26 @@
       "id": "34",
       "name": "nidoking",
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/34.png"
+    },
+    {
+      "id": "38",
+      "name": "ninetales",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/38.png"
+    },
+    {
+      "id": "44",
+      "name": "gloom",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/44.png"
+    },
+    {
+      "id": "77",
+      "name": "ponyta",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/77.png"
+    },
+    {
+      "id": "83",
+      "name": "farfetchd",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/83.png"
     },
     {
       "id": "94",
@@ -263,16 +303,17 @@
       "id": "149",
       "name": "dragonite",
       "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png"
+    }
+  ],
+  "users": [
+    {
+      "email": "artur.trombo@gmail.com",
+      "password": "123456"
     },
     {
-      "id": "150",
-      "name": "mewtwo",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png"
-    },
-    {
-      "id": "151",
-      "name": "mew",
-      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png"
+      "id": "26ca",
+      "email": "artur.trombo@gmail.com",
+      "password": "111111"
     }
   ]
 }
