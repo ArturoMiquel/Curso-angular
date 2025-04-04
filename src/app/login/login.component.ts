@@ -48,7 +48,7 @@ export class LoginComponent implements OnInit {
         if (users.length > 0 && users[0].password === password) { // Verifica si el usuario existe y la contraseña coincide
           const response = { token: 'dummy-token' }; // Genera un token ficticio (puedes reemplazarlo con lógica real)
           this.cookieService.set('token_access', response.token, 1, '/');
-          this.router.navigate(['']);
+          this.router.navigate(['/home']); // Cambiar redirección a '/home'
         } else {
           const mensajeDiv = document.querySelector('.mensaje');
           if (mensajeDiv) {

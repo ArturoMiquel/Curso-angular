@@ -1,0 +1,15 @@
+<app-header></app-header>
+<div class="container">
+  <div class="upload-container">
+    <h2>Subir Imagen</h2>
+    <input type="file" (change)="onImageSelected($event)" accept="image/*" />  
+    <button type="button" (click)="subirImagen()" [disabled]="!archivos?.[0] || loading">
+      {{ loading ? 'Subiendo...' : 'Subir Imagen' }}
+    </button>
+  </div>
+  <div class="image-preview" *ngIf="imagePreview">
+    <h3>Vista Previa:</h3>
+    <img [src]="imagePreview" alt="Vista previa de la imagen" />
+  </div>
+</div>
+<app-sidebar></app-sidebar>

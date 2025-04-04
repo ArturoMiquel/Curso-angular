@@ -6,7 +6,7 @@
     <ul>
         <li *ngFor="let video of listaDeVideos" (click)="eliminarFavorito(video)">
             <div>
-                <img class="mini-image" [src]="video?.sprite" alt="">
+                <img appImagenRota class="mini-image" [src]="video?.sprite" alt="">
             </div>
             <div>
                 <div class="title-inside">

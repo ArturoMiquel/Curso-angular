@@ -45,6 +45,22 @@
     color: #ffffff;
     text-decoration: underline;
 }
+.linkImagen a{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+    top: 1rem;
+    right: 12rem;
+    border:#ff0000de solid 2px;
+    padding: 0.5rem 1rem;
+    background-color: #fcbd47de;
+
+}
+.linkImagen a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
 .buscador {
     position: absolute;
     color: rgb(0, 0, 0);
