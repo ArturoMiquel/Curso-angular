@@ -10,6 +10,7 @@ import { LoginComponent } from './app/login/login.component';
 import { CookieService } from 'ngx-cookie-service';
 import { VigilanteGuard } from './app/vigilante.guard';
 import { SubirImagenComponent } from './app/subir-imagen/subir-imagen.component';
+import { PruebaDomComponent } from './app/prueba-dom/prueba-dom.component';
 
 const routes = [
   {path: '', component: LoginComponent},
@@ -19,7 +20,8 @@ const routes = [
   {path: 'post/:textAreaComentario', component: PostDetailComponent,canActivate: [VigilanteGuard]},
   {path: 'list-videos', component: ListViewsComponent,canActivate: [VigilanteGuard]},
   {path: 'login', component : LoginComponent},
-  {path: 'subir-imagen', component : SubirImagenComponent,canActivate: [VigilanteGuard]}
+  {path: 'subir-imagen', component : SubirImagenComponent,canActivate: [VigilanteGuard]},
+  {path: 'prueba-dom', component : PruebaDomComponent}
 ];
 
 bootstrapApplication(AppComponent, {
