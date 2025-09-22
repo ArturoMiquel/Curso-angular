@@ -42,6 +42,8 @@ export class LoginComponent implements OnInit {
       }
 
   enviarDatos(): any {
+
+    /*
     const { email, password } = this.formLogin.value; // Extrae email y password del formulario
     this.RestService.get(`http://localhost:3000/users?email=${email}`).subscribe(
       (users: any[]) => {
@@ -61,5 +63,8 @@ export class LoginComponent implements OnInit {
         console.error('Error al comprobar el usuario:', error); // Manejo de errores en la verificación
       }
     );
+    */
+    // Desactivado: acceso directo sin comprobación
+    this.router.navigate(['/home']);
   }
 }

@@ -6,10 +6,11 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { RestService } from '../rest.service';
 import { ServicioDeFavoritosService } from '../servicio-de-favoritos.service';
+import { EjemploComponent } from '../ejemplo/ejemplo.component';
 
 @Component({
   selector: 'app-home',
-  imports: [HeaderComponent, CardComponent, SidebarComponent, CommonModule, RouterModule],
+  imports: [HeaderComponent, CardComponent, SidebarComponent, CommonModule, RouterModule, EjemploComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
